@@ -6,6 +6,7 @@ import "../css/app.css";
 import { createInertiaApp } from "@inertiajs/react";
 import { resolvePageComponent } from "laravel-vite-plugin/inertia-helpers";
 import { createRoot } from "react-dom/client";
+import { Toaster } from "react-hot-toast";
 import MetaMaskContextProvider from "@/Contexts/MetaMaskContext";
 
 const appName = window.document.querySelector("title")?.innerText ?? "NFTer";
@@ -19,6 +20,7 @@ createInertiaApp({
         root.render(
             <MetaMaskContextProvider>
                 <App {...props} />
+                <Toaster />
             </MetaMaskContextProvider>,
         );
     },

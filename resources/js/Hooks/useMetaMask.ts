@@ -2,6 +2,7 @@ import { type VisitOptions } from "@inertiajs/core";
 import { router } from "@inertiajs/react";
 import { ethers, utils } from "ethers";
 import { useCallback, useEffect, useState } from "react";
+import toast from "react-hot-toast";
 import { type Ethereum } from "./useMetaMask.contracts";
 
 const hasMetaMask = (): boolean => window.ethereum !== undefined;
@@ -161,6 +162,7 @@ const useMetaMask = (): MetaMaskState => {
     const onError = useCallback((error: ErrorType, errorMessage?: string) => {
         setErrorMessage(errorMessage ?? ErrorTypes[error]);
 
+        toast.error(errorMessage ?? ErrorTypes[error]);
         setConnecting(false);
     }, []);
 

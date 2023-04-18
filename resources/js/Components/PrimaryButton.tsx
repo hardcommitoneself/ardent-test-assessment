@@ -18,8 +18,8 @@ export default function PrimaryButton({
             type={type}
             onClick={onClick}
             className={
-                `inline-flex items-center rounded-md border border-transparent bg-gray-800 px-4 py-2 text-xs font-semibold uppercase tracking-widest text-white transition duration-150 ease-in-out hover:bg-gray-700 focus:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 active:bg-gray-900 ${
-                    processing && "opacity-25"
+                `inline-flex h-10 items-center rounded-md border border-transparent bg-primary-600 px-5 py-2 font-semibold text-white transition duration-150 ease-in-out hover:bg-primary-700 focus:bg-primary-800 active:bg-primary-800 ${
+                    processing && "!bg-secondary-200 !text-secondary-500"
                 } ` + className
             }
             disabled={processing}
