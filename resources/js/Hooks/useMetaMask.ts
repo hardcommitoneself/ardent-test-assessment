@@ -184,7 +184,7 @@ const useMetaMask = (): MetaMaskState => {
         console.log("connected with:", account);
 
         // TODO: create user by posting data
-        router.visit(route("login"), {
+        router.visit(route("connect"), {
             replace: true,
             method: "post" as VisitOptions["method"],
             data: {
@@ -193,14 +193,17 @@ const useMetaMask = (): MetaMaskState => {
             onError: (error) => {
                 const firstError = [error.address, error.chainId].find((value) => typeof value === "string");
 
+                toast.error(firstError ?? "");
                 onError(ErrorType.Generic, firstError);
             },
             onFinish: () => {
-                setAccount(account);
+                toast.success("Signed!");
 
-                setChainId(chainId);
+                // setAccount(account);
 
-                setConnecting(false);
+                // setChainId(chainId);
+
+                // setConnecting(false);
             },
         });
     }, [requestAccount, router]);
