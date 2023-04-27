@@ -15,13 +15,14 @@ module.exports = {
                 sans: ["Lato", ...defaultTheme.fontFamily.sans],
             },
             backgroundColor: {
-                app: "#F5F5F5",
+                app: "#FFFFFF",
             },
             height: {
                 17: "4.5rem",
             },
             colors: {
                 primary: {
+                    0: "#FFFFFF",
                     50: "#F2F5FC",
                     100: "#E2E8F7",
                     200: "#CBD6F2",
@@ -49,5 +50,5 @@ module.exports = {
         },
     },
 
-    plugins: [require("@tailwindcss/forms")],
+    plugins: [require("@tailwindcss/forms"), require('@tailwindcss/line-clamp'),],
 };
