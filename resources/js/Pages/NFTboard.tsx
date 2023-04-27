@@ -19,8 +19,8 @@ export default function NFTboard(properties: Properties): JSX.Element {
     const [address, setAddress] = useState("");
 
     useEffect(()=>{
-        const pusher = new Pusher("3df4867559edec0feecd", {
-            cluster: "mt1",
+        const pusher = new Pusher(import.meta.env.VITE_PUSHER_APP_KEY as string, {
+            cluster: import.meta.env.VITE_PUSHER_APP_CLUSTER as string,
             forceTLS: true,
         });
 
@@ -29,7 +29,6 @@ export default function NFTboard(properties: Properties): JSX.Element {
         const channel = pusher.subscribe(channelName);
 
         channel.bind('nft-ready', function(receivedData:DataType) {
-            
             setNfts(receivedData.data.nfts);
             setLoading(false);
             setAddress(receivedData.data.address);
