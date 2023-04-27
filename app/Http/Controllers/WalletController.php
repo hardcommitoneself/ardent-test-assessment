@@ -5,6 +5,9 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Models\User;
+use App\Jobs\GetNftsJob;
+use Inertia\Inertia;
+use App\Events\MessageSent;
 
 class WalletController extends Controller
 {
@@ -20,5 +23,13 @@ class WalletController extends Controller
         $user->eth_address = $address;
 
         $user->save();
+
+        Inertia::share('loading', true);
+
+        dispatch(new GetNftsJob($address));
+        
+        return Inertia::render('NFTboard', [
+            'address' => $address,
+        ]);
     }
 }

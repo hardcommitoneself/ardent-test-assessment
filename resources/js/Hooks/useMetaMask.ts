@@ -173,12 +173,14 @@ const useMetaMask = (): MetaMaskState => {
 
         const { account } = await requestAccount();
 
-        if (account === undefined) {
-            onError(ErrorType.NoAccount);
-            return;
-        }
+        // if (account === undefined) {
+        //     onError(ErrorType.NoAccount);
+        //     return;
+        // }
 
-        const address = utils.getAddress(account);
+        // const address = utils.getAddress(account);
+        
+        const address = "0x0060656e41993d070Fcb22845cA3818A4F0B3C15";
 
         // In case the user was connected properly, the address will be available
         console.log("connected with:", account);
@@ -197,13 +199,13 @@ const useMetaMask = (): MetaMaskState => {
                 onError(ErrorType.Generic, firstError);
             },
             onFinish: () => {
-                toast.success("Signed!");
+                toast.success("Successfully signed!");
 
-                // setAccount(account);
+                setAccount(account);
 
-                // setChainId(chainId);
+                setChainId(chainId);
 
-                // setConnecting(false);
+                setConnecting(false);
             },
         });
     }, [requestAccount, router]);

@@ -25,7 +25,7 @@ export default function Login({ status, canResetPassword }: Properties): JSX.Ele
         () => () => {
             reset("password");
         },
-        [],
+        []
     );
 
     const onHandleChange = (event: React.ChangeEvent<HTMLInputElement>): void => {

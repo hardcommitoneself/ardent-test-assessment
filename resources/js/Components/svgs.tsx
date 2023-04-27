@@ -263,3 +263,19 @@ export const ILoading = (): JSX.Element => (
         ></path>
     </svg>
 );
+
+export const UnhappyIcon = (): JSX.Element => (
+    <svg fill="#DBDEE5" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" viewBox="0 0 103.696 103.696" stroke="#DBDEE5" strokeWidth="0.00103696"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.622176"></g><g id="SVGRepo_iconCarrier"> <g> <path d="M74.836,70.501c0.658,1.521-0.042,3.287-1.562,3.944c-1.521,0.66-3.286-0.042-3.944-1.562 c-2.894-6.689-9.731-11.012-17.421-11.012c-7.868,0-14.747,4.318-17.523,11.004c-0.479,1.154-1.596,1.85-2.771,1.85 c-0.384,0-0.773-0.074-1.15-0.229c-1.53-0.636-2.255-2.392-1.62-3.921c3.71-8.932,12.764-14.703,23.064-14.703 C61.994,55.872,70.994,61.614,74.836,70.501z M31.06,35.17c0-3.423,2.777-6.201,6.201-6.201c3.423,0,6.2,2.777,6.2,6.201 c0,3.426-2.777,6.203-6.2,6.203C33.836,41.373,31.06,38.597,31.06,35.17z M59.176,35.17c0-3.423,2.78-6.201,6.203-6.201 c3.424,0,6.201,2.777,6.201,6.201c0,3.426-2.777,6.203-6.201,6.203C61.957,41.373,59.176,38.597,59.176,35.17z M85.467,103.696 H18.23C8.179,103.696,0,95.518,0,85.467V18.23C0,8.178,8.179,0,18.23,0h67.235c10.053,0,18.23,8.178,18.23,18.23v67.235 C103.697,95.518,95.518,103.696,85.467,103.696z M18.23,8.579c-5.321,0-9.651,4.33-9.651,9.651v67.235 c0,5.321,4.33,9.651,9.651,9.651h67.235c5.321,0,9.651-4.33,9.651-9.651V18.23c0-5.321-4.33-9.651-9.651-9.651H18.23z"></path> </g> </g></svg>
+);
+
+export const OpenExplorerIcon = (): JSX.Element => (
+    <svg viewBox="0 0 24 24" fill="none" height="16px" width="16px" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M13.5 10.5L21 3" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M16 3L21 3L21 8" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M21 14V19C21 20.1046 20.1046 21 19 21H12H5C3.89543 21 3 20.1046 3 19V5C3 3.89543 3.89543 3 5 3H10" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+)
+
+export const LogOutIcon = (): JSX.Element => (
+    <svg viewBox="0 0 24 24" fill="none" height="16px" width="16px" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M21 12L13 12" stroke="#323232" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M18 15L20.913 12.087V12.087C20.961 12.039 20.961 11.961 20.913 11.913V11.913L18 9" stroke="#323232" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M16 5V4.5V4.5C16 3.67157 15.3284 3 14.5 3H5C3.89543 3 3 3.89543 3 5V19C3 20.1046 3.89543 21 5 21H14.5C15.3284 21 16 20.3284 16 19.5V19.5V19" stroke="#323232" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+)
+
+export const CrossIcon = (): JSX.Element => (
+    <svg viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg" fill="#B01E20" height="20px" width="20px"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g fill="none" fill-rule="evenodd" stroke="#B01E20" stroke-linecap="round" stroke-linejoin="round" transform="translate(2 2)"> <circle cx="8.5" cy="8.5" r="8"></circle> <g transform="matrix(0 1 -1 0 17 0)"> <path d="m5.5 11.5 6-6"></path> <path d="m5.5 5.5 6 6"></path> </g> </g> </g></svg>
+)

@@ -3,6 +3,5 @@
     "printWidth": 120,
     "singleAttributePerLine": true,
     "useTabs": false,
-    "singleQuote": false,
-    "trailingComma": "all"
+    "singleQuote": false
 }

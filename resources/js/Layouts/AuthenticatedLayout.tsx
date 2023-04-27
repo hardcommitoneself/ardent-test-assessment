@@ -6,6 +6,7 @@ interface Properties {
     header?: React.ReactNode;
     children?: React.ReactNode;
     error?: any;
+    address?: string;
 }
 
 export default function Authenticated({ header, children }: Properties): JSX.Element {
