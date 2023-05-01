@@ -28,7 +28,7 @@ For this project to run, you need a couple of things:
 -   Laravel 10+
 -   Laravel Valet or Homestead
 
--    Pusher account and an app setup (Pusher account is free and setting up an app is simple) (If not setup, see Setup-Pusher-App[https://www.vikramatech.co/article/setup-pusher-app])
+-    Pusher account and an app setup (Pusher account is free and setting up an app is simple) (If not setup, see Setup-Pusher-App [https://www.vikramatech.co/article/setup-pusher-app] )
 
 ## Setup Project
 
@@ -40,10 +40,7 @@ For this project to run, you need a couple of things:
 -   Setup an application key with `php artisan key:generate`
 -   Run migrations with `php artisan migrate:fresh`
 
--   Setup environemt variables for Pusher
-   -  PUSHER_APP_ID=
-   -  PUSHER_APP_KEY=
-   -  PUSHER_APP_SECRET=
+-   Setup environemt variables for Pusher (PUSHER_APP_ID, PUSHER_APP_KEY, PUSHER_APP_SECRET)
    
 ## How To Run
 -   <code>php artisan serve</code>
