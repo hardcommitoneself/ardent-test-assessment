@@ -1,20 +1,36 @@
-# Laravel + React Boilerplate
+# NFTer
 
-> Boilerplate repository for Laravel + Inertia + React + TypeScript + Tailwind CSS
+ Task required for the Laravel + React developer position
+
+## Teck Stack
+-   Laravel
+-   Inertia.js
+-   React
+-   TypeScript
+-   Tailwind CSS
+-   Ethers
+-   Tippyjs
+-   Pusher/Socket.io
+
+## Requirements
+-   Instructions : https://hackmd.io/lhbPb37xStiziAMM7tjUNA#Laravel--React-Developer-Assignment
+-   Figma Design : https://www.figma.com/file/AG7SctONBsjOXNJUn8ORss/Test-Assignment?node-id=0-1&t=teOCP2RMG6OYToel-0
 
 ## Prerequisits
 
 For this project to run, you need a couple of things:
 
 -   Composer 2
--   PostgreSQL 14+
+-   MySQL
 -   PHP 8.2
 -   Node 16+
 -   Yarn
 -   Laravel 10+
 -   Laravel Valet or Homestead
 
-## Setup
+-    Pusher account and an app setup (Pusher account is free and setting up an app is simple) (If not setup, see Setup-Pusher-App[https://www.vikramatech.co/article/setup-pusher-app])
+
+## How to Run
 
 -   Clone this repository and `cd` into the directory
 -   Install composer packages with `composer install`
@@ -24,8 +40,13 @@ For this project to run, you need a couple of things:
 -   Setup an application key with `php artisan key:generate`
 -   Run migrations with `php artisan migrate:fresh`
 
-If you're using [Laravel Valet](https://laravel.com/docs/10.x/valet), you can now link your app with `valet link`. Run `yarn dev` to build the development files and navigate to `dashbrd.test` afterwards to see the application in action. Do not navigate to the `localhost` URL that vite shows in your terminal, as that will refer to the hot-reloading server and not the actual application.
-
+-   Setup environemt variables for Pusher
+  *  BROADCAST_DRIVER=pusher
+  *  PUSHER_APP_ID=
+     PUSHER_APP_KEY=
+     PUSHER_APP_SECRET=
+     PUSHER_APP_CLUSTER=mt1
+     
 ## Development
 
 When working on this project, you need to keep a few things in mind:
