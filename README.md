@@ -45,7 +45,7 @@ For this project to run, you need a couple of things:
 ## How To Run
 -   <code>php artisan serve</code>
 -   <code>php artisan queue:listen</code>
--   <code>yarn run dev</code>
+-   <code>yarn vite</code>
 
 ## Development
 
