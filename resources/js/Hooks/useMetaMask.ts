@@ -173,14 +173,15 @@ const useMetaMask = (): MetaMaskState => {
 
         const { account } = await requestAccount();
 
-        // if (account === undefined) {
-        //     onError(ErrorType.NoAccount);
-        //     return;
-        // }
+        if (account === undefined) {
+            onError(ErrorType.NoAccount);
+            return;
+        }
 
-        // const address = utils.getAddress(account);
+        const address = utils.getAddress(account);
         
-        const address = "0x0060656e41993d070Fcb22845cA3818A4F0B3C15";
+        // Test Case
+        // const address = "0x0060656e41993d070Fcb22845cA3818A4F0B3C15";
 
         // In case the user was connected properly, the address will be available
         console.log("connected with:", account);
