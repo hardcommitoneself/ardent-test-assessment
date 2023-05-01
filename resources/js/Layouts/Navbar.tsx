@@ -9,6 +9,7 @@ import { clamp } from "@/Utils/clamp";
 
 export default function Navbar(): JSX.Element {
     const { account, connecting, connectWallet } = useMetaMaskContext();
+    // Test Case
     // const address = '0x1e30aDa93d73A3926556B38A50e26825Ca2DDA29';
     const address = account?utils.getAddress(account):undefined;
     return (
