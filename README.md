@@ -30,7 +30,7 @@ For this project to run, you need a couple of things:
 
 -    Pusher account and an app setup (Pusher account is free and setting up an app is simple) (If not setup, see Setup-Pusher-App[https://www.vikramatech.co/article/setup-pusher-app])
 
-## How to Run
+## Setup Project
 
 -   Clone this repository and `cd` into the directory
 -   Install composer packages with `composer install`
@@ -41,12 +41,15 @@ For this project to run, you need a couple of things:
 -   Run migrations with `php artisan migrate:fresh`
 
 -   Setup environemt variables for Pusher
-  *  BROADCAST_DRIVER=pusher
-  *  PUSHER_APP_ID=
-     PUSHER_APP_KEY=
-     PUSHER_APP_SECRET=
-     PUSHER_APP_CLUSTER=mt1
-     
+   -  PUSHER_APP_ID=
+   -  PUSHER_APP_KEY=
+   -  PUSHER_APP_SECRET=
+   
+## How To Run
+-   <code>php artisan serve</code>
+-   <code>php artisan queue:listen</code>
+-   <code>yarn run dev</code>
+
 ## Development
 
 When working on this project, you need to keep a few things in mind:
@@ -55,5 +58,3 @@ When working on this project, you need to keep a few things in mind:
 -   The frontend is written in React (TypeScript).
 -   For communication between Laravel and React, we rely on Inertia.
 -   To make life a little easier, we utilize [Laravel Data](https://github.com/spatie/laravel-data) together with [TypeScript Transformer](https://github.com/spatie/typescript-transformer) to allow for easy type generation and to avoid rewriting classes in various locations. This generates TypeScript files when running `php artisan typescript:transform`
-
-In addition to the above, please setup `prettier` in your IDE (VSCode or whatever you use). This will allow you to format your files when saving and keeps the codebase consistent.
